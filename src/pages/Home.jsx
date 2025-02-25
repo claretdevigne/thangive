@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function Home() {
   return (
     <main className="relative">
@@ -5,8 +7,10 @@ export default function Home() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-30">
           <h1 className="text-4xl md:text-6xl font-bold fade-in">Hacemos tus momentos especiales</h1>
           <p className="text-lg md:text-2xl mt-4 fade-in">Arreglos personalizados con entrega</p>
-          <a href="/catalog" className="mt-6 bg-[#FF6F61] text-white py-3 px-6 rounded-full btn-hover fade-in">Ver arreglos</a>
-        </div>
+          <button className="mt-6 bg-[#FF6F61] text-white py-3 px-6 rounded-full btn-hover fade-in">
+            <NavLink to="/catalog">Ver arreglos</NavLink>
+          </button>
+          </div>
       </div>
     </main>
   );
