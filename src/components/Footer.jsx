@@ -7,6 +7,7 @@ export default function Footer() {
       <div className="flex justify-center space-x-6 mt-2">
         <NavLink to="/" className="hover:underline ">Inicio</NavLink>
         <NavLink to="/catalog" className="hover:underline">Catálogo</NavLink>
+        <NavLink to="/about" className="hover:underline">Sobre mi</NavLink>
         <NavLink to="/contact" className="hover:underline">Contacto</NavLink>
       </div>
       <div className="flex justify-center space-x-4 mt-2">
